@@ -34,7 +34,11 @@ public class Article {
 	}
 	
 	public String toString() {
-		return this.name + " " + this.stars + " étoiles";
+		String result = this.id.toString()+" / "+this.name + " " + this.stars + " étoiles a été acheté par :";
+		for(Person p : this.acheteurs) {
+			result += "\n- "+p.toString(); 
+		}
+		return result;
 	}
 	
 	

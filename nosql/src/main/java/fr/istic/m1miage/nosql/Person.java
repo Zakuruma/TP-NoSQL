@@ -32,9 +32,9 @@ public class Person {
 	}
 
 	public String toString() {
-		String result = this.name+" habite :\n";
+		String result =  this.id.toString()+" / "+this.name+" habite :";
 		for(Address a : this.addresses) {
-			result += "- "+a.toString()+"\n"; 
+			result += "\n- "+a.toString(); 
 		}
 		return result;
 	}

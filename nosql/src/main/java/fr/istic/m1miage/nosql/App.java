@@ -88,14 +88,6 @@ public class App
 		ds.save(ar1);
 		ds.save(ar2);
 		ds.save(ar3);
-
-		System.out.println("===============================");
-		System.out.println("Personnes");
-		System.out.println("===============================");
-
-		for (Person e : ds.find(Person.class)) {
-			System.out.println(e.toString());
-		}
 		
 		System.out.println("===============================");
 		System.out.println("Adresses");
@@ -103,6 +95,14 @@ public class App
 
 		for (Address a : ds.find(Address.class)) {
 			System.out.println(a.toString());
+		}
+		
+		System.out.println("===============================");
+		System.out.println("Personnes");
+		System.out.println("===============================");
+
+		for (Person e : ds.find(Person.class)) {
+			System.out.println(e.toString());
 		}
 		
 		System.out.println("===============================");

@@ -31,7 +31,7 @@ public class Address {
 	}
 	
 	public String toString() {
-		return this.street + " " + this.city + " " + this.postCode + " " + this.country;
+		return this.id.toString()+" / "+this.street + " " + this.city + " " + this.postCode + " " + this.country;
 	}
 
 }
